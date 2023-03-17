@@ -1,1 +1,25 @@
-<p>pick-method-payment works!</p>
+<h2>Pick a Payment Method</h2>
+<ul>
+  <li>
+    <label>
+      <input type="radio" name="paymentMethod" value="creditCard" (click)="onSelectPaymentMethod('creditCard')">
+      Credit Card
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="radio" name="paymentMethod" value="Cash" (click)="onSelectPaymentMethod('Cash')">
+      Cash
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="radio" name="paymentMethod" value="virement" (click)="onSelectPaymentMethod('virement')">
+     virement
+    </label>
+  </li>
+</ul>
+
+
+    
+  

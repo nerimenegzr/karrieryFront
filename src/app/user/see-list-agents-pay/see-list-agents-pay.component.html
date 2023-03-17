@@ -1,1 +1,18 @@
-<p>see-list-agents-pay works!</p>
+<h2>List of Agents</h2>
+<ul>
+  <li *ngFor="let agent of agents">{{ agent }}</li>
+</ul>
+
+<h2>Pay an Agent</h2>
+<form>
+  <label>
+    Select an agent:
+    <select #agentSelect>
+      <option *ngFor="let agent of agents" [value]="agent">{{ agent }}</option>
+    </select>
+  </label>
+  <button type="button" (click)="payAgent(agentSelect.value)">Pay in cash</button>
+</form>
+
+  
+

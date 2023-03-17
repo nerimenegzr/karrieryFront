@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./see-list-agents-pay.component.css']
 })
 export class SeeListAgentsPayComponent {
+  agents: string[] = ['Agent A', 'Agent B', 'Agent C'];
 
+  payAgent(agent: string) {
+    console.log('Paying ' + agent + ' in cash.');
+  }
 }
+
+
+
+

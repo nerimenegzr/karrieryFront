@@ -1,1 +1,9 @@
-<p>see-available-packs works!</p>
+<div class="packs">
+    <div class="pack" *ngFor="let pack of packs">
+      <img src="{{ pack.image }}" alt="{{ pack.name }}">
+      <h3>{{ pack.name }}</h3>
+      <p>{{ pack.description }}</p>
+      <h4>{{ pack.price | currency }}</h4>
+    </div>
+  </div>
+  

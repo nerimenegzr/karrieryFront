@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cancel-order-notpayed',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class CancelOrderNotpayedComponent {
 
+  @Input() orderId: number;
+
+  constructor() { }
+
+  cancelOrder() {
+    // Implement logic to cancel the order if it's not already paid
+    console.log('Order with ID', this.orderId, 'has been cancelled.');
+  }
 }

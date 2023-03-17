@@ -1,1 +1,48 @@
-<p>update-profil works!</p>
+<form (ngSubmit)="updateProfile()" #updateProfileForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+      </div>
+      <div class="form-group">
+        <label for="telephone">Telephone:</label>
+        <input type="telephone" id="telephone" name="telephone" [(ngModel)]="user.telephone" required>
+      </div>
+      <div class="form-group">
+        <label for="pack">Pack:</label>
+        <input type="pack" id="pack" name="pack" [(ngModel)]="user.pack" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="address" id="address" name="address" [(ngModel)]="user.address" required>
+      </div>
+      <div class="form-group">
+        <label for="postal-code">Postal-code:</label>
+        <input type="postal-code" id="postal-code" name="postal-code" [(ngModel)]="user.postal-code" required>
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="state" id="state" name="state" [(ngModel)]="user.state" required>
+      </div>
+      <div class="form-group">
+        <label for="education">Education:</label>
+        <input type="education" id="education" name="education" [(ngModel)]="user.education" required>
+      </div>
+      <div class="form-group">
+        <label for="work">Work:</label>
+        <input type="work" id="work" name="work" [(ngModel)]="user.work" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="country" id="country" name="country" [(ngModel)]="user.country" required>
+      </div>
+    <button type="submit" class="btn btn-primary" [disabled]="updateProfileForm.invalid">Update Profile</button>
+  </form>
+  

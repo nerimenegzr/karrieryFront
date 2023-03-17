@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./pick-method-payment.component.css']
 })
 export class PickMethodPaymentComponent {
+  selectedPaymentMethod!: string;
 
+  onSelectPaymentMethod(paymentMethod: string): void {
+    this.selectedPaymentMethod = paymentMethod;
+  }
 }
+
+
+
+
+

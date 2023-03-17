@@ -1,0 +1,11 @@
+<form>
+  <label for="orderNumber">Order Number:</label>
+  <input type="text" id="orderNumber" name="orderNumber">
+  <button type="submit">Check Status</button>
+</form>
+<form (submit)="checkStatus()">
+  ...
+</form>
+<div *ngIf="status">
+  Status: {{ status }}
+</div>

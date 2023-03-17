@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './see-how-much-profil-ready.component.html',
   styleUrls: ['./see-how-much-profil-ready.component.css']
 })
-export class SeeHowMuchProfilReadyComponent {
+export class SeeHowMuchProfileReadyComponent {
+  profileCompletion: number = 50; // Initial value
+
+  // Add some logic to update the profileCompletion value based on the user's profile data
+  // ...
 
 }
+

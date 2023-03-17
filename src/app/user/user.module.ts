@@ -9,21 +9,21 @@ import { GetNotifOrdersstatusChangesComponent } from './get-notif-ordersstatus-c
 import { LoginComponent } from './login/login.component';
 import { OrderPackComponent } from './order-pack/order-pack.component';
 import { PickMethodPaymentComponent } from './pick-method-payment/pick-method-payment.component';
-import { SeeAvailablePacksComponent } from './see-available-packs/see-available-packs.component';
 import { SeeCoachMyorderComponent } from './see-coach-myorder/see-coach-myorder.component';
-import { SeeHowMuchProfilReadyComponent } from './see-how-much-profil-ready/see-how-much-profil-ready.component';
+import { SeeHowMuchProfileReadyComponent } from './see-how-much-profil-ready/see-how-much-profil-ready.component';
 import { SeeListAgentsPayComponent } from './see-list-agents-pay/see-list-agents-pay.component';
 import { SeeListMyresumesComponent } from './see-list-myresumes/see-list-myresumes.component';
 import { SeeOrdersComponent } from './see-orders/see-orders.component';
 import { SeeProfilComponent } from './see-profil/see-profil.component';
 import { SendFeedbackAdminComponent } from './send-feedback-admin/send-feedback-admin.component';
 import { SignUpComponent } from './signup/signup.component';
-import { UpdateProfilComponent } from './update-profil/update-profil.component';
 import { UploadResumeComponent } from './upload-resume/upload-resume.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { VideoChatCoachMyorderComponent } from './video-chat-coach-myorder/video-chat-coach-myorder.component';
 import { ForgotPasswordComponent } from './forget-password/forget-password.component';
-
+import { UserProfilComponent } from './user-profil/user-profil.component';
+import { OrderStatusComponent } from './order-status/order-status.component';
+import { SeeAvailablePacksComponent } from './see-available-packs/see-available-packs.component';
 
 @NgModule({
   declarations: [
@@ -34,24 +34,26 @@ import { ForgotPasswordComponent } from './forget-password/forget-password.compo
     LoginComponent,
     OrderPackComponent,
     PickMethodPaymentComponent,
-    SeeAvailablePacksComponent,
     SeeCoachMyorderComponent,
-    SeeHowMuchProfilReadyComponent,
+    SeeHowMuchProfileReadyComponent,
     SeeListAgentsPayComponent,
     SeeListMyresumesComponent,
     SeeOrdersComponent,
     SeeProfilComponent,
     SendFeedbackAdminComponent,
     SignUpComponent,
-    UpdateProfilComponent,
     UploadResumeComponent,
     VerifyEmailComponent,
     VideoChatCoachMyorderComponent,
     ForgotPasswordComponent,
+    UserProfilComponent,
+    OrderStatusComponent,
+    SendFeedbackAdminComponent,
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+
   ]
 })
 export class UserModule { }

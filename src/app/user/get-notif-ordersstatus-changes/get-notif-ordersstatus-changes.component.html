@@ -1,1 +1,4 @@
-<p>get-notif-ordersstatus-changes works!</p>
+<div *ngFor="let order of orders">
+  <span>Order {{ order.id }}: {{ order.status }}</span>
+</div>
+

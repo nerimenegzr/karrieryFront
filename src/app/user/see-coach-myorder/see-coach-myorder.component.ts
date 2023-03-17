@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./see-coach-myorder.component.css']
 })
 export class SeeCoachMyorderComponent {
-
+  coachName: any ;
+  orderStatus: string = "In progress";
+coachLinkdIn: any;
+coachdescription: any;
+coachEmail: any;
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./see-orders.component.css']
 })
 export class SeeOrdersComponent {
-
+  orders: string[] = ['Order 1', 'Order 2', 'Order 3'];
 }
