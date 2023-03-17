@@ -14,7 +14,7 @@ orders: any;
 
   ngOnInit(): void {
     this.getOrders().subscribe((orders: any) => {
-      orders.forEach((order) => {
+      orders.forEach((order: { id: number; }) => {
         this.subscribeToOrderChanges(order.id);
       });
     });
@@ -39,7 +39,7 @@ orders: any;
       }
     );
   }
-  on
+  on: any
   }
 
 

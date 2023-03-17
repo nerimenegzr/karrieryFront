@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CancelOrderNotpayedComponent {
 
-  @Input() orderId: number;
+  @Input() orderId!: number;
 
   constructor() { }
 

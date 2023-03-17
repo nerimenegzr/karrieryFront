@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import SimplePeer from 'simple-peer';
+import * as SimplePeer from 'simple-peer';
 
 @Component({
   selector: 'app-video-chat-coach-myorder',
@@ -21,11 +21,11 @@ export class VideoChatCoachMyorderComponent {
         localVideo.srcObject = stream;
 
         // Connect to remote video stream
-        this.peer.on('signal', data => {
+        this.peer.on('signal', (_data: any) => {
           // Send signal data to coach
         });
 
-        this.peer.on('stream', stream => {
+        this.peer.on('stream', (stream: MediaProvider | null) => {
           // Display remote video stream
           const remoteVideo = document.querySelector('#remoteVideo') as HTMLVideoElement;
           remoteVideo.srcObject = stream;

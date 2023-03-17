@@ -15,7 +15,7 @@ export class ChatCoachMyorderComponent {
     // Send the message to the coach
     this.http.post('/api/sendMessage', { message }).subscribe(response => {
       // Add the message to the chat window
-      this.messages.push(response['message']);
+      this.messages.push();
     });
   }
 }

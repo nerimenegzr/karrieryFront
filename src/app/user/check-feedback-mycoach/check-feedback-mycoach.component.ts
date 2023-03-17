@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./check-feedback-mycoach.component.css']
 })
 export class CheckFeedbackMycoachComponent implements OnInit {
-  feedbackData: any[];
+  feedbackData!: any[];
 
   constructor(private http: HttpClient) { }
 

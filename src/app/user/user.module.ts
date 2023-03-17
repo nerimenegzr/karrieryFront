@@ -22,7 +22,6 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { VideoChatCoachMyorderComponent } from './video-chat-coach-myorder/video-chat-coach-myorder.component';
 import { ForgotPasswordComponent } from './forget-password/forget-password.component';
 import { UserProfilComponent } from './user-profil/user-profil.component';
-import { OrderStatusComponent } from './order-status/order-status.component';
 import { SeeAvailablePacksComponent } from './see-available-packs/see-available-packs.component';
 
 @NgModule({
@@ -47,7 +46,7 @@ import { SeeAvailablePacksComponent } from './see-available-packs/see-available-
     VideoChatCoachMyorderComponent,
     ForgotPasswordComponent,
     UserProfilComponent,
-    OrderStatusComponent,
+    
     SendFeedbackAdminComponent,
   ],
   imports: [
