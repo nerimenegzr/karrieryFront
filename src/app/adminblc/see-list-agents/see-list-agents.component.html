@@ -1,1 +1,17 @@
-<p>see-list-agents works!</p>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let agent of agents">
+        <td>{{agent.id}}</td>
+        <td>{{agent.name}}</td>
+        <td>{{agent.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+  

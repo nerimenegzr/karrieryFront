@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-delete-agent',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class DeleteAgentComponent {
 
+  constructor(private http: HttpClient) { }
+
+  deleteAgent() {
+    this.http.delete('/api/agents/agent-id').subscribe(_response => {
+      console.log('Agent deleted successfully');
+    });
+  }
+
 }
+

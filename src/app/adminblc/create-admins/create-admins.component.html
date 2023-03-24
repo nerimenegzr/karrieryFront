@@ -1,1 +1,19 @@
-<p>create-admins works!</p>
+<div class="container">
+    <h2>Create Admin</h2>
+    <form [formGroup]="adminForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" formControlName="password">
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="adminForm.invalid">Create Admin</button>
+    </form>
+  </div>
+  

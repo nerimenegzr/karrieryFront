@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-chec-user-profil',
+  selector: 'app-check-user-profile',
   templateUrl: './chec-user-profil.component.html',
   styleUrls: ['./chec-user-profil.component.css']
 })
-export class ChecUserProfilComponent {
-
+export class CheckUserProfileComponent {
+  @Input()
+  userId!: number;
 }
+

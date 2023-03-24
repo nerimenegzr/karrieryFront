@@ -1,1 +1,20 @@
-<p>see-payed-request works!</p>
+<h2>Payed Requests</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Client Name</th>
+      <th>Coach Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let request of PayedRequests">
+      <td>{{ request.date | date }}</td>
+      <td>{{ request.amount | currency }}</td>
+      <td>{{ request.clientName }}</td>
+      <td>{{ request.coachName }}</td>
+    </tr>
+  </tbody>
+</table>
+

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-confirm-coach-payment',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./confirm-coach-payment.component.css']
 })
 export class ConfirmCoachPaymentComponent {
+  @Input()
+  coachName!: string;
+  @Input()
+  paymentAmount!: number;
 
+  confirmPayment() {
+    // Add your code to confirm the coach payment here
+  }
 }

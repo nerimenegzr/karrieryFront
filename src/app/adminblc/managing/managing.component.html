@@ -1,1 +1,17 @@
-<p>managing works!</p>
+<form (ngSubmit)="onSubmit()">
+    <label>Email Address:</label>
+    <input type="email" name="email" [(ngModel)]="email">
+    <br>
+    <label>Password:</label>
+    <input type="password" name="password" [(ngModel)]="password">
+    <br>
+    <label>Permissions:</label>
+    <select name="permissions" [(ngModel)]="permissions">
+      <option value="admin">Admin</option>
+      <option value="super-admin">Super Admin</option>
+    </select>
+    <br>
+    <button type="submit">Add Admin</button>
+  </form>
+  
+

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./see-list-transactions.component.css']
 })
 export class SeeListTransactionsComponent {
-
+  transactions = ['Transaction 1', 'Transaction 2', 'Transaction 3'];
 }
+
+
+
+

@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./chat-admin.component.css']
 })
 export class ChatAdminComponent {
+  messages: string[] = [];
+  messageText: string = '';
 
+  sendMessage() {
+    if (this.messageText !== '') {
+      this.messages.push(`Coach: ${this.messageText}`);
+      this.messageText = '';
+    }
+  }
 }
+

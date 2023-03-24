@@ -8,17 +8,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UploadResumeComponent {
 
-  selectedFile: File = null;
-
+  selectedFile: File | null = null;
+  FileSelected!: string | Blob;
   constructor(private http: HttpClient) { }
 
-  onFileSelected(event) {
-    this.selectedFile = <File>event.target.files[0];
-  }
-
+  onFileSelected(event: any) {
+    const file: File = event.target.files[0];
+    if (file) {
+      this.selectedFile = file;
+    }
+  }  
   uploadResume() {
     const formData = new FormData();
-    formData.append('resume', this.selectedFile, this.selectedFile.name);
+    formData.append('resume',this.FileSelected);
     this.http.post('http://example.com/upload', formData)
       .subscribe(res => {
         console.log(res);

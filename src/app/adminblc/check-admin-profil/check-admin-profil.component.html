@@ -1,0 +1,16 @@
+<div *ngIf="isAdminLoggedIn">
+    <h2>Check Admin Profile</h2>
+    <label for="adminId">Admin ID:</label>
+    <input type="text" [(ngModel)]="adminId" name="adminId">
+    <button (click)="viewAdminProfile()">View Profile</button>
+  
+    <div *ngIf="adminProfile">
+      <h3>Admin Profile</h3>
+      <p><strong>Name:</strong> {{ adminProfile.name }}</p>
+      <p><strong>Email:</strong> {{ adminProfile.email }}</p>
+      <p><strong>Role:</strong> {{ adminProfile.role }}</p>
+    </div>
+  </div>
+  
+  
+

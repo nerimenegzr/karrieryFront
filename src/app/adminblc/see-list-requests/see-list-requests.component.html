@@ -1,1 +1,18 @@
-<p>see-list-requests works!</p>
+<h1>Requests</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let request of requests">
+      <td>{{ request.id }}</td>
+      <td>{{ request.name }}</td>
+      <td>{{ request.status }}</td>
+    </tr>
+  </tbody>
+</table>
+

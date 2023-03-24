@@ -1,1 +1,5 @@
-<p>see-list-admins works!</p>
+<h2>List of Admins</h2>
+<ul>
+  <li *ngFor="let admin of admins">{{ admin.name }} - {{ admin.email }}</li>
+</ul>
+

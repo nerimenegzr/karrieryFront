@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./msg-user-request.component.css']
 })
 export class MsgUserRequestComponent {
+  message! : string;
 
+  sendMessage() {
+    // Logic to send message to user
+  }
 }
+
+
+

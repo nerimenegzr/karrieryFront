@@ -1,1 +1,8 @@
-<p>do-everything works!</p>
+<div *ngIf="canDoEverything()">
+    <!-- Add your code here for the actions that only a super admin can perform -->
+  </div>
+  
+  <div *ngIf="!canDoEverything()">
+    <!-- Add your code here for the actions that a normal admin can perform -->
+  </div>
+  

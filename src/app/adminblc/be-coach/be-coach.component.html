@@ -1,1 +1,14 @@
-<p>be-coach works!</p>
+<h1>Ban Coaches</h1>
+
+<div *ngIf="isAdmin">
+  <p>Select a coach to ban:</p>
+  <select [(ngModel)]="selectedCoach">
+    <option *ngFor="let coach of coaches" [value]="coach">{{coach.name}}</option>
+  </select>
+  <button (click)="banCoach()">Ban Coach</button>
+</div>
+
+<div *ngIf="!isAdmin">
+  <p>You do not have permission to ban coaches.</p>
+</div>
+

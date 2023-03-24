@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { CoachRoutingModule } from './coach-routing.module';
 import { LoginComponent } from './login/login.component';
 import { ChatAdminComponent } from './chat-admin/chat-admin.component';
@@ -19,7 +19,8 @@ import { SeeProfilComponent } from './see-profil/see-profil.component';
 import { UpdatePasswordComponent } from './update-password/update-password.component';
 import { UpdateProfilComponent } from './update-profil/update-profil.component';
 import { SendWirthdrawToDoAdminComponent } from './send-wirthdraw-to-do-admin/send-wirthdraw-to-do-admin.component';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,11 +40,17 @@ import { SendWirthdrawToDoAdminComponent } from './send-wirthdraw-to-do-admin/se
     SeeProfilComponent,
     UpdatePasswordComponent,
     UpdateProfilComponent,
-    SendWirthdrawToDoAdminComponent
+    SendWirthdrawToDoAdminComponent,
+
   ],
   imports: [
     CommonModule,
-    CoachRoutingModule
-  ]
+    CoachRoutingModule, 
+     BrowserModule,
+    FormsModule,
+    HttpClientModule,
+  ],
+providers: [],
+bootstrap:  [CoachModule]
 })
 export class CoachModule { }

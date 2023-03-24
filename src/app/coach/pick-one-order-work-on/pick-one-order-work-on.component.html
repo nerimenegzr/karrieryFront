@@ -1,1 +1,9 @@
-<p>pick-one-order-work-on works!</p>
+<div>
+    <h2>Pick an order to work on</h2>
+    <ul>
+      <li *ngFor="let order of orders" (click)="selectOrder(order)">
+        {{ order.id }} - {{ order.name }}
+      </li>
+    </ul>
+  </div>
+  

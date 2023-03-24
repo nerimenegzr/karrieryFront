@@ -1,1 +1,19 @@
-<p>see-list-coachs works!</p>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Expertise</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coach of coaches">
+        <td>{{ coach.name }}</td>
+        <td>{{ coach.email }}</td>
+        <td>{{ coach.phone }}</td>
+        <td>{{ coach.expertise }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

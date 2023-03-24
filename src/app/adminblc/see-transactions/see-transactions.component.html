@@ -1,1 +1,31 @@
-<p>see-transactions works!</p>
+<form (submit)="getTransactionStats()">
+    <label for="start-date">Start date:</label>
+    <input type="date" id="start-date" [(ngModel)]="startDate" name="startDate" required>
+    
+    <label for="end-date">End date:</label>
+    <input type="date" id="end-date" [(ngModel)]="endDate" name="endDate" required>
+    
+    <button type="submit">Get transaction stats</button>
+  </form>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Total transactions</th>
+        <th>Total amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stat of transactionStats">
+        <td>{{ stat.date }}</td>
+        <td>{{ stat.totalTransactions }}</td>
+        <td>{{ stat.totalAmount }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+ 
+  
+
+

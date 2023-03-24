@@ -1,1 +1,8 @@
-<p>chec-user-profil works!</p>
+<div *ngIf="userId">
+    <h2>User Profile: {{ userId }}</h2>
+    <!-- add code here to display user profile details -->
+  </div>
+  <div *ngIf="!userId">
+    <p>No user ID provided.</p>
+  </div>
+  

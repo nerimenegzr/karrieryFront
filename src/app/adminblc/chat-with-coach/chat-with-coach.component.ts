@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./chat-with-coach.component.css']
 })
 export class ChatWithCoachComponent {
+  messages: string[] = [];
+  newMessage: string = '';
 
+  sendMessage() {
+    if (this.newMessage.trim() !== '') {
+      this.messages.push(this.newMessage);
+      this.newMessage = '';
+    }
+  }
 }
+

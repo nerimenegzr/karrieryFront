@@ -1,1 +1,8 @@
-<p>be-user works!</p>
+<h2>Ban Users</h2>
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }} ({{ user.email }})
+    <button (click)="banUser(user.id)">Ban User</button>
+  </li>
+</ul>
+

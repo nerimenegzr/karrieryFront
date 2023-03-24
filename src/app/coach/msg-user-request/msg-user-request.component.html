@@ -1,1 +1,7 @@
-<p>msg-user-request works!</p>
+<form>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" [(ngModel)]="message"></textarea>
+    <button type="submit" (click)="sendMessage()">Send</button>
+  </form>
+  
+  

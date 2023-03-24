@@ -1,1 +1,6 @@
-<p>authanti-new-order-add works!</p>
+<form (ngSubmit)="addNewOrder()">
+    <input type="text" placeholder="Order Name" [(ngModel)]="newOrder.name">
+    <input type="number" placeholder="Order Quantity" [(ngModel)]="newOrder.quantity">
+    <button type="submit">Add New Order</button>
+  </form>
+  

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-agent.component.css']
 })
 export class AddAgentComponent {
+  
+  addAgent(_name: string, _email: string, _phone: string) {
+    // Code to add agent to database/API goes here
+  }
 
 }
+
